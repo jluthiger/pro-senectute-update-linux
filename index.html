@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpDate: Linux entdecken - Pro Senectute</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.css">
+    <style>
+        :root {
+            --r-main-font-size: 32px;
+            --r-heading1-size: 2.2em;
+            --r-heading2-size: 1.8em;
+            --r-heading3-size: 1.4em;
+        }
+        .reveal {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #2c3e50;
+            text-transform: none;
+        }
+        .reveal h1 {
+            font-size: 2.2em;
+        }
+        .reveal h2 {
+            font-size: 1.6em;
+        }
+        .reveal ul {
+            text-align: left;
+        }
+        .reveal li {
+            margin-bottom: 0.5em;
+            line-height: 1.4;
+        }
+        .reveal .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .reveal .pro {
+            color: #27ae60;
+        }
+        .reveal .con {
+            color: #c0392b;
+        }
+        .reveal .info-box {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .reveal .pause-slide {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .reveal .pause-slide h2 {
+            color: white;
+        }
+        .reveal .two-columns {
+            display: flex;
+            justify-content: space-around;
+            text-align: left;
+        }
+        .reveal .two-columns > div {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .reveal .logo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 0.5em;
+            color: #95a5a6;
+        }
+        .reveal .title-slide h1 {
+            font-size: 1.8em;
+        }
+        .reveal .emoji {
+            font-size: 1.5em;
+        }
+        .reveal table {
+            font-size: 0.9em;
+        }
+        .reveal table th {
+            background: #3498db;
+            color: white;
+        }
+        .reveal table td, .reveal table th {
+            padding: 12px 20px;
+            border: 1px solid #bdc3c7;
+        }
+        .reveal .fragment.highlight-current-green.current-fragment {
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Titelfolie -->
+            <section class="title-slide">
+                <h1>Neuer Schwung für Ihren Computer</h1>
+                <h2>Linux entdecken</h2>
+                <p style="margin-top: 2em; color: #7f8c8d;">Pro Senectute - UpDate Referat</p>
+                <p style="color: #95a5a6; font-size: 0.8em;">Dauer: ca. 2 Stunden (inkl. Pause)</p>
+            </section>
+
+            <!-- Agenda -->
+            <section>
+                <h2>Unser Programm heute</h2>
+                <table>
+                    <tr><th>Zeit</th><th>Thema</th></tr>
+                    <tr><td>09:00</td><td>Begrüssung & Einführung</td></tr>
+                    <tr><td>09:15</td><td>Was ist Linux?</td></tr>
+                    <tr><td>09:30</td><td>Vorteile & Nachteile</td></tr>
+                    <tr><td>09:50</td><td><strong>Pause (10 Min.)</strong></td></tr>
+                    <tr><td>10:00</td><td>Kosten & Aufwand</td></tr>
+                    <tr><td>10:20</td><td>Live-Demonstration</td></tr>
+                    <tr><td>10:45</td><td>Fragen & Diskussion</td></tr>
+                </table>
+            </section>
+
+            <!-- Einführung -->
+            <section>
+                <h2>Warum sind wir heute hier?</h2>
+                <ul>
+                    <li>Windows 10 Support endet im <span class="highlight">Oktober 2025</span></li>
+                    <li>Viele Computer können Windows 11 nicht installieren</li>
+                    <li>Ein neuer Computer kostet schnell 800-1500 CHF</li>
+                    <li class="fragment"><strong>Es gibt eine Alternative!</strong></li>
+                </ul>
+            </section>
+
+            <!-- Was ist Linux? -->
+            <section>
+                <section>
+                    <h2>Was ist Linux?</h2>
+                    <ul>
+                        <li>Ein <strong>Betriebssystem</strong> wie Windows oder macOS</li>
+                        <li>Entwickelt seit 1991</li>
+                        <li><span class="highlight">Kostenlos</span> und frei verfügbar</li>
+                        <li>Wird von Millionen Menschen weltweit genutzt</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Wo wird Linux bereits eingesetzt?</h2>
+                    <ul>
+                        <li>Android-Smartphones basieren auf Linux</li>
+                        <li>Die meisten Webserver im Internet</li>
+                        <li>Smart-TVs und Router</li>
+                        <li>Supercomputer und Raumfahrt</li>
+                    </ul>
+                    <p class="fragment" style="margin-top: 1em;"><em>Linux ist also kein Experiment - es ist bewährt!</em></p>
+                </section>
+                <section>
+                    <h2>Linux Mint - Unser Favorit</h2>
+                    <ul>
+                        <li>Speziell für Einsteiger entwickelt</li>
+                        <li>Sieht Windows sehr ähnlich</li>
+                        <li>Einfache Bedienung</li>
+                        <li>Grosse deutschsprachige Community</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Was bedeutet der Umstieg? -->
+            <section>
+                <section>
+                    <h2>Was bedeutet ein Umstieg?</h2>
+                    <ul>
+                        <li>Ihr Computer bleibt derselbe</li>
+                        <li>Windows wird durch Linux ersetzt</li>
+                        <li>Ihre Dateien können übernommen werden</li>
+                        <li>Einige Programme ändern sich</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Was bleibt gleich?</h2>
+                    <ul>
+                        <li>Internet surfen (Firefox, Chrome)</li>
+                        <li>E-Mails schreiben (Thunderbird)</li>
+                        <li>Fotos anschauen und verwalten</li>
+                        <li>Musik und Videos abspielen</li>
+                        <li>Dokumente bearbeiten (LibreOffice)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Was ändert sich?</h2>
+                    <ul>
+                        <li>Aussehen ist etwas anders (aber ähnlich)</li>
+                        <li>Microsoft Office wird zu LibreOffice</li>
+                        <li>Einige Windows-Programme laufen nicht</li>
+                        <li>Neue Wege, Programme zu installieren</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Vorteile -->
+            <section>
+                <section>
+                    <h2 class="pro">Vorteile von Linux</h2>
+                </section>
+                <section>
+                    <h2 class="pro">1. Kostenlos</h2>
+                    <ul>
+                        <li>Kein Kaufpreis für das Betriebssystem</li>
+                        <li>Keine Lizenzgebühren</li>
+                        <li>Kostenlose Office-Programme enthalten</li>
+                        <li>Tausende weitere Programme gratis</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="pro">2. Sicher</h2>
+                    <ul>
+                        <li>Weniger Viren und Schadsoftware</li>
+                        <li>Regelmässige Sicherheitsupdates</li>
+                        <li>Kein teures Antivirenprogramm nötig</li>
+                        <li>Ihre Daten gehören Ihnen</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="pro">3. Schnell & Ressourcenschonend</h2>
+                    <ul>
+                        <li>Läuft auch auf älteren Computern flüssig</li>
+                        <li>Startet schneller als Windows</li>
+                        <li>Wird nicht langsamer mit der Zeit</li>
+                        <li>Verlängert die Lebensdauer Ihres Computers</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="pro">4. Unabhängigkeit</h2>
+                    <ul>
+                        <li>Keine Abhängigkeit von Microsoft</li>
+                        <li>Keine erzwungenen Updates</li>
+                        <li>Keine Werbung im Betriebssystem</li>
+                        <li>Volle Kontrolle über Ihren Computer</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="pro">5. Datenschutz</h2>
+                    <ul>
+                        <li>Keine Datensammlung durch Microsoft</li>
+                        <li>Sie bestimmen, was gesendet wird</li>
+                        <li>Transparenz durch offenen Quellcode</li>
+                        <li>Respekt für Ihre Privatsphäre</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Nachteile -->
+            <section>
+                <section>
+                    <h2 class="con">Nachteile von Linux</h2>
+                </section>
+                <section>
+                    <h2 class="con">1. Umgewöhnung nötig</h2>
+                    <ul>
+                        <li>Neue Oberfläche (aber ähnlich zu Windows)</li>
+                        <li>Einige Dinge funktionieren anders</li>
+                        <li>Kurze Einarbeitungszeit notwendig</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="con">2. Einige Programme fehlen</h2>
+                    <ul>
+                        <li>Microsoft Office nicht verfügbar (aber LibreOffice)</li>
+                        <li>Adobe Photoshop nicht verfügbar (aber GIMP)</li>
+                        <li>Einige Bankprogramme funktionieren nicht</li>
+                        <li>Manche Spiele laufen nicht</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="con">3. Hardware-Kompatibilität</h2>
+                    <ul>
+                        <li>Manche Drucker/Scanner brauchen Anpassungen</li>
+                        <li>Spezielle Hardware kann problematisch sein</li>
+                        <li>Vorher testen ist empfehlenswert</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="con">4. Weniger bekannt</h2>
+                    <ul>
+                        <li>Familie/Bekannte kennen sich evtl. nicht aus</li>
+                        <li>Support meist über Internet/Community</li>
+                        <li>Weniger "offizieller" Telefon-Support</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- PAUSE -->
+            <section class="pause-slide">
+                <h2>Pause</h2>
+                <p style="font-size: 1.5em;">10 Minuten</p>
+                <p style="margin-top: 2em;">Geniessen Sie eine kurze Erfrischung!</p>
+                <p style="font-size: 0.8em; margin-top: 2em;">Wir fahren um ca. 10:00 Uhr fort.</p>
+            </section>
+
+            <!-- Kosten -->
+            <section>
+                <section>
+                    <h2>Was kostet der Umstieg?</h2>
+                </section>
+                <section>
+                    <h2>Option 1: Selbst installieren</h2>
+                    <div class="info-box">
+                        <p><strong>Kosten: 0 CHF</strong></p>
+                        <ul>
+                            <li>Linux ist kostenlos</li>
+                            <li>Anleitungen im Internet verfügbar</li>
+                            <li>USB-Stick (ca. 10 CHF) benötigt</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h2>Option 2: Mit Hilfe</h2>
+                    <div class="info-box">
+                        <p><strong>Kosten: ca. 50-150 CHF</strong></p>
+                        <ul>
+                            <li>Installation durch Fachperson</li>
+                            <li>Datensicherung inklusive</li>
+                            <li>Einführung in die Bedienung</li>
+                            <li>Pro Senectute oder lokaler IT-Service</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h2>Kostenvergleich</h2>
+                    <table>
+                        <tr>
+                            <th>Option</th>
+                            <th>Kosten</th>
+                        </tr>
+                        <tr>
+                            <td>Neuer Windows-PC</td>
+                            <td>800 - 1500 CHF</td>
+                        </tr>
+                        <tr>
+                            <td>Windows 11 Lizenz</td>
+                            <td>ca. 150 CHF</td>
+                        </tr>
+                        <tr style="background: #d5f5e3;">
+                            <td><strong>Linux Installation</strong></td>
+                            <td><strong>0 - 150 CHF</strong></td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+
+            <!-- Zeitlicher Aufwand -->
+            <section>
+                <section>
+                    <h2>Zeitlicher Aufwand</h2>
+                </section>
+                <section>
+                    <h2>Installation</h2>
+                    <ul>
+                        <li>Datensicherung: 1-2 Stunden</li>
+                        <li>Linux-Installation: ca. 30-60 Minuten</li>
+                        <li>Programme einrichten: 1-2 Stunden</li>
+                        <li><strong>Insgesamt: ca. einen halben Tag</strong></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Einarbeitung</h2>
+                    <ul>
+                        <li>Grundbedienung: wenige Stunden</li>
+                        <li>Routiniert werden: 1-2 Wochen</li>
+                        <li>Die meisten Dinge funktionieren sofort vertraut</li>
+                    </ul>
+                    <p class="fragment" style="margin-top: 1em;"><em>Tipp: Einfach ausprobieren und keine Angst haben!</em></p>
+                </section>
+            </section>
+
+            <!-- Praktische Demonstration -->
+            <section>
+                <section>
+                    <h2>Live-Demonstration</h2>
+                    <p>Jetzt zeige ich Ihnen Linux in Aktion!</p>
+                </section>
+                <section>
+                    <h2>Was wir uns anschauen</h2>
+                    <ul>
+                        <li>Der Desktop und das Startmenü</li>
+                        <li>Dateien und Ordner verwalten</li>
+                        <li>Im Internet surfen</li>
+                        <li>E-Mails schreiben</li>
+                        <li>Dokumente bearbeiten</li>
+                        <li>Programme installieren</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Erste Schritte -->
+            <section>
+                <section>
+                    <h2>Wie kann ich Linux ausprobieren?</h2>
+                </section>
+                <section>
+                    <h2>Option 1: Live-USB</h2>
+                    <ul>
+                        <li>Linux vom USB-Stick starten</li>
+                        <li>Ohne Installation testen</li>
+                        <li>Windows bleibt erhalten</li>
+                        <li>Risikofrei ausprobieren</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Option 2: Virtuell testen</h2>
+                    <ul>
+                        <li>Linux in einem Fenster unter Windows</li>
+                        <li>Mit VirtualBox (kostenlos)</li>
+                        <li>Beide Systeme gleichzeitig</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Option 3: Direkt installieren</h2>
+                    <ul>
+                        <li>Erst <strong>Datensicherung</strong> machen!</li>
+                        <li>Linux ersetzt Windows komplett</li>
+                        <li>Oder: Dual-Boot (beide Systeme)</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Hilfe und Support -->
+            <section>
+                <h2>Wo bekomme ich Hilfe?</h2>
+                <ul>
+                    <li><strong>Pro Senectute</strong> - Computerkurse</li>
+                    <li><strong>Linux Mint Forum</strong> - forums.linuxmint.com</li>
+                    <li><strong>YouTube</strong> - Video-Anleitungen</li>
+                    <li><strong>Lokale Linux-Gruppen</strong> - Linux User Groups</li>
+                    <li><strong>Familie & Bekannte</strong> mit IT-Kenntnissen</li>
+                </ul>
+            </section>
+
+            <!-- Zusammenfassung -->
+            <section>
+                <h2>Zusammenfassung</h2>
+                <div class="two-columns">
+                    <div>
+                        <h3 class="pro">Lohnt sich, wenn...</h3>
+                        <ul>
+                            <li>Ihr PC für Windows 11 zu alt ist</li>
+                            <li>Sie Geld sparen möchten</li>
+                            <li>Ihnen Datenschutz wichtig ist</li>
+                            <li>Sie offen für Neues sind</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="con">Eher nicht, wenn...</h3>
+                        <ul>
+                            <li>Sie spezielle Windows-Programme brauchen</li>
+                            <li>Sie ungern umlernen</li>
+                            <li>Kein Support verfügbar ist</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Checkliste -->
+            <section>
+                <h2>Ihre Checkliste für den Umstieg</h2>
+                <ol>
+                    <li>Welche Programme nutze ich täglich?</li>
+                    <li>Gibt es Linux-Alternativen dafür?</li>
+                    <li>Wer kann mir bei der Installation helfen?</li>
+                    <li>Habe ich eine aktuelle Datensicherung?</li>
+                    <li>Möchte ich Linux erst ausprobieren?</li>
+                </ol>
+            </section>
+
+            <!-- Fragen -->
+            <section>
+                <h2>Fragen & Diskussion</h2>
+                <p style="font-size: 1.3em;">Haben Sie Fragen?</p>
+                <p style="margin-top: 2em; color: #7f8c8d;">Jetzt ist Zeit für Ihre Anliegen!</p>
+            </section>
+
+            <!-- Abschluss -->
+            <section>
+                <h2>Vielen Dank!</h2>
+                <p style="margin-top: 1em;">Für Ihre Aufmerksamkeit und Ihr Interesse</p>
+                <div class="info-box" style="margin-top: 2em;">
+                    <p><strong>Weiterführende Links:</strong></p>
+                    <p>Linux Mint: <a href="https://linuxmint.com">linuxmint.com</a></p>
+                    <p>Pro Senectute: <a href="https://www.prosenectute.ch">prosenectute.ch</a></p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            progress: true,
+            center: true,
+            transition: 'slide',
+            // Tastatursteuerung
+            keyboard: true,
+            // Übersicht mit ESC
+            overview: true,
+            // Touch-Gesten für Tablets
+            touch: true,
+            // Geschwindigkeit
+            transitionSpeed: 'default'
+        });
+    </script>
+</body>
+</html>
